@@ -56,6 +56,22 @@
                 </div>
             </div>
         </div>
+        <div id="site_footer">
+            <div class="container flex">
+                <div class="signup">
+                    <h2>SIGN-UP NOW!</h2>
+                </div>
+
+                <div class="social flex">
+                    <h2>FOLLOW US</h2>
+                    <img src="../assets/img/footer-facebook.png" alt="">
+                    <img src="../assets/img/footer-twitter.png" alt="">
+                    <img src="../assets/img/footer-youtube.png" alt="">
+                    <img src="../assets/img/footer-pinterest.png" alt="">
+                    <img src="../assets/img/footer-periscope.png" alt="">
+                </div>
+            </div>
+        </div>
     </footer>
 </template>
 
@@ -66,6 +82,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../assets/scss/variable.scss";
 
 .footerJumboImg{
     background-image:url(../assets/img/footer-bg.jpg);
@@ -77,7 +94,7 @@ export default {
     h3{
         padding-top: 4rem;
         padding-bottom: 1rem;
-        color:white;
+        color:$third;
     }
     ul{
         list-style: none;
@@ -85,6 +102,22 @@ export default {
             padding-top:0.5rem;
             color: #8f8f90;
         }
+    }
+}
+
+#site_footer{
+    background-color: $brand-secondary ;
+    padding: 3rem 0rem;
+    .signup{
+        h2{
+            color: $third;
+            padding: 1rem;
+            border: $brand-primary 5px solid;
+        }
+    }
+    .social{
+        color: $brand-primary;
+        justify-content: space-around;
     }
 }
 </style>

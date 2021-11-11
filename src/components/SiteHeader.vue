@@ -1,9 +1,9 @@
 <template>
   <header>
     <div class="container">
-      <nav>
+      <nav class="flex">
         <img src="../assets/img/dc-logo.png" alt="" />
-        <ul>
+        <ul  class="flex"> 
           <li><a href="#">CHARCTERS</a></li>
           <li><a href="#">COMICS</a></li>
           <li><a href="#">MOVIES</a></li>
@@ -33,13 +33,12 @@ header {
 
 
   nav {
-    display: flex;
+    
     justify-content: space-between;
     align-items: center;
   }
 
   ul {
-    display: flex;
     li {
       display: inline;
       padding: 1rem;

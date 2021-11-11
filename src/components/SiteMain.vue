@@ -5,24 +5,24 @@
         <h2>Content goes here</h2>
       </div>
     </div>
-    <div class="primary_background">
-      <div class="cards">
+    <div class="primary_background flex">
+      <div class="cards flex">
         <img src="../assets/img/buy-comics-digital-comics.png" alt="" />
         <p>DIGITAL COMICS</p>
       </div>
-      <div class="cards">
+      <div class="cards flex">
         <img src="../assets/img/buy-comics-merchandise.png" alt="" />
         <p>DC MERCHADISE</p>
       </div>
-      <div class="cards">
+      <div class="cards flex">
         <img src="../assets/img/buy-comics-subscriptions.png" alt="" />
         <p>SUBSCTIPTION</p>
       </div>
-      <div class="cards">
+      <div class="cards flex">
         <img src="../assets/img/buy-comics-shop-locator.png" alt="" />
         <p>COMIC SHOP LOCATOR</p>
       </div>
-      <div class="cards">
+      <div class="cards flex">
         <img src="../assets/img/buy-dc-power-visa.svg" alt="" />
         <p>CD POWER VISA</p>
       </div>
@@ -46,10 +46,8 @@
 .primary_background {
   background-color: $brand-primary;
   padding: 3rem;
-  display: flex;
   justify-content: center;
   .cards {
-      display: flex;
       line-height: 75px;
       img{
           height: 75px;
