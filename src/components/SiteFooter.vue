@@ -108,7 +108,7 @@ export default {};
     justify-content: space-between;
   }
   background-color: $brand-secondary;
-  padding: 3rem 0rem;
+  padding: 2rem 0rem;
   width: 100%;
   .signup {
     h2 {
