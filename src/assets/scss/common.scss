@@ -1,10 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 75%;
     margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-2 {
+    width: calc(100% / 2);
+}
+
+.col-3 {
+    width: calc(100% / 4);
 }

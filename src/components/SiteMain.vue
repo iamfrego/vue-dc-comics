@@ -58,7 +58,6 @@
       p{
           color: white;
           padding-left: 2rem;
-
       }
   }
 }
