@@ -1,20 +1,31 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <div class="container">
+      <SiteHeader />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SiteHeader from "./components/SiteHeader.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    SiteHeader,
+  },
+};
 </script>
 
 <style lang="scss">
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.container{
+    width: 75%;
+    margin: auto;
+}
 </style>
