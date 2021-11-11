@@ -1,31 +1,24 @@
 <template>
   <div id="app">
-    <div class="container">
-      <SiteHeader />
-    </div>
+    <SiteHeader />
+    <SiteMain />
   </div>
 </template>
 
 <script>
 import SiteHeader from "./components/SiteHeader.vue";
+import SiteMain from "./components/SiteMain.vue"
 
 export default {
   name: "App",
   components: {
     SiteHeader,
+    SiteMain,
   },
 };
 </script>
 
 <style lang="scss">
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container{
-    width: 75%;
-    margin: auto;
-}
+@import "./assets/scss/variable.scss";
+@import "./assets/scss/common.scss";
 </style>

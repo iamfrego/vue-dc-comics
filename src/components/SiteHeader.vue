@@ -1,20 +1,22 @@
 <template>
   <header>
-    <nav>
-      <img src="../assets/img/dc-logo.png" alt="" />
-      <ul>
-        <li><a href="#">CHARCTERS</a></li>
-        <li><a href="#">COMICS</a></li>
-        <li><a href="#">MOVIES</a></li>
-        <li><a href="#">TV</a></li>
-        <li><a href="#">GAMES</a></li>
-        <li><a href="#">COLLECTABLES</a></li>
-        <li><a href="#">VIDEOS</a></li>
-        <li><a href="#">FANS</a></li>
-        <li><a href="#">NEWS</a></li>
-        <li><a href="#">SHOP</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav>
+        <img src="../assets/img/dc-logo.png" alt="" />
+        <ul>
+          <li><a href="#">CHARCTERS</a></li>
+          <li><a href="#">COMICS</a></li>
+          <li><a href="#">MOVIES</a></li>
+          <li><a href="#">TV</a></li>
+          <li><a href="#">GAMES</a></li>
+          <li><a href="#">COLLECTABLES</a></li>
+          <li><a href="#">VIDEOS</a></li>
+          <li><a href="#">FANS</a></li>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">SHOP</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 </template>
 
@@ -27,7 +29,8 @@ export default {};
 @import "../assets/scss/variable.scss";
 
 header {
-  margin-top: 2rem;
+  margin: 2rem 0rem;
+
 
   nav {
     display: flex;
