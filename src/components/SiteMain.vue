@@ -5,11 +5,17 @@
     </div>
     <div class="black_background">
       <div class="container">
-          <div class="current_series">CURRECT SERIES</div>
-          <div class="comics row">
-          <Comic class="col-2" v-for="comic in comics" :key="comic.series"
-          :image="comic.thumb" :titolo="comic.series"/>
-          </div>
+        <div class="current_series">CURRECT SERIES</div>
+        <div class="comics row">
+          <Comic
+            class="col-2"
+            v-for="comic in comics"
+            :key="comic.series"
+            :image="comic.thumb"
+            :titolo="comic.series"
+          />
+        </div>
+        <div class="load_more">LOAD MORE</div>
       </div>
     </div>
     <SiteMainIconRow />
@@ -17,7 +23,7 @@
 </template>
 
 <script>
-import Comic from "./Comic.vue"
+import Comic from "./Comic.vue";
 import SiteMainIconRow from "./SiteMainIconRow.vue";
 export default {
   data() {
@@ -110,36 +116,46 @@ export default {
       ],
     };
   },
-  components: { 
-      Comic,
-      SiteMainIconRow,
-      },
+  components: {
+    Comic,
+    SiteMainIconRow,
+  },
 };
 </script>
 
 <style lang="scss">
 @import "../assets/scss/variable.scss";
 
-.jumboImg{
-    img{
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-        object-position: top;
-    }
+.jumboImg {
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+  }
 }
 
-.container{
-    position: relative;
+.container {
+  position: relative;
 }
 
 .current_series {
+  color: $third;
   padding: 1rem 1.5rem;
   background-color: $brand-primary;
   font-size: 1.5rem;
   position: absolute;
   top: -90px;
   left: 0px;
+}
+
+.load_more {
+  width: fit-content;
+  margin: auto;
+  color: $third;
+  padding: 1rem 1.5rem;
+  background-color: $brand-primary;
+  
 }
 
 .black_background {
