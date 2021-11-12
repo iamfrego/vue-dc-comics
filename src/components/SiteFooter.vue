@@ -3,7 +3,7 @@
     <div class="footerJumboImg">
       <div class="container">
         <div class="row">
-          <div class="col-2">
+          <div class="col-6">
             <div class="row">
               <div class="col-3">
                 <h3>DC COMICS</h3>
@@ -50,7 +50,7 @@
               </div>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-6">
             <img src="../assets/img/dc-logo-bg.png" alt="" />
           </div>
         </div>

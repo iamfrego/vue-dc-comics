@@ -5,7 +5,10 @@
     </div>
     <div class="black_background">
       <div class="container">
-        <h2>Content goes here</h2>
+          <div class="comics row">
+          <Comic class="col-2" v-for="comic in comics" :key="comic.series"
+          :image="comic.thumb" :titolo="comic.series"/>
+          </div>
       </div>
     </div>
     <SiteMainIconRow />
@@ -13,6 +16,7 @@
 </template>
 
 <script>
+import Comic from "./Comic.vue"
 import SiteMainIconRow from "./SiteMainIconRow.vue";
 export default {
   data() {
@@ -105,7 +109,10 @@ export default {
       ],
     };
   },
-  components: { SiteMainIconRow },
+  components: { 
+      Comic,
+      SiteMainIconRow,
+      },
 };
 </script>
 
