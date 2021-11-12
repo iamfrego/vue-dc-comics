@@ -5,6 +5,7 @@
     </div>
     <div class="black_background">
       <div class="container">
+          <div class="current_series">CURRECT SERIES</div>
           <div class="comics row">
           <Comic class="col-2" v-for="comic in comics" :key="comic.series"
           :image="comic.thumb" :titolo="comic.series"/>
@@ -126,6 +127,19 @@ export default {
         object-fit: cover;
         object-position: top;
     }
+}
+
+.container{
+    position: relative;
+}
+
+.current_series {
+  padding: 1rem 1.5rem;
+  background-color: $brand-primary;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -90px;
+  left: 0px;
 }
 
 .black_background {
